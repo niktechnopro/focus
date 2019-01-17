@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Focus | Productivity Timer</title>
+
+  <!-- in place of favicon we use tomato image-->
+  <link rel="icon" type="image/gif/png" href="images/new_logo.png">
+  <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="./js/jquery.min.js"></script>  
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+</head>
+<body>
+
+  <!-- modal -->
+        <div id="modal-wrapper">
+          <div id="modal">
+            <div id="modalBody">
+              <img src="./images/chucknorris.jpg" alt="chuck norris" />
+              <div id="joke">Chuck Norris Jokes</div>
+            </div>
+          </div>
+        </div>
+        <!-- modla -->
+
+  <div id="wrapper">
+
+	<div class="container">
+    <!-- <h1 id="logo-text">Focus!</h1> -->
+    <!-- top portion -->
+      <div id="top_portion_container">
+        <!-- logo + header -->
+        <div id = "logo-wrap">
+          <img id="tomato" src='images/new_logo.png' alt="tomato">  
+          <!-- class="display-3 title title-text" -->
+          <h1 id="logo-text">Focus!</h1>
+        </div>
+        <!-- Focus! Title -->
+        <div id="title">
+          <p id="slideToggle">Based on Pomodoro Technique</p>
+          <div id="dropdown-content">
+            The Pomodoro Technique is a method that can "help anyone to focus."
+                <p>Instructions:</p>
+                <ul>
+                  <li>Choose a task to be accomplished.</li>
+                  <li>Set the time for Work and Break </li>
+                  <li>Work on the task until work session is over (work timer countdown)</li>
+                  <li>Take a short break (rest timer countdown)</li>
+                  <li>After every four work sessions take a long break</li>
+                  <li>Enjoy funny "facts" about Chuck Norris</li>
+                </ul>
+          </div>
+        </div>
+
+        <div id="title">
+          <p id="buttonsToggle">Set the time below:</p>
+        </div>
+        <!-- buttons  -->
+        <div id="btns-wrapper">
+          <div class="min-wrapper">
+            <div class="time-set">Work Time (min)</div>
+            <div class="btn-group">
+              <div id="session-decrement">-</div>
+                <div class="workTimer">25</div>
+              <div id="session-increment">+</div>
+            </div>
+          </div>
+
+          <div class="min-wrapper">
+            <div class="time-set">Rest Time (min)</div>
+            <div class="btn-group">
+              <div id="break-decrement">-</div>
+                <div class="playTimer">05</div>
+              <div id="break-increment">+</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  <!-- bottom portion -->
+  <div id="bottom_portion_container">
+    <div class="flip-container">
+      <div class="flipper">
+        <div class="time time-box front">
+          <h1 id="session-label">Work Session</h1>
+          <div class="width"><div class="minutes">25</div></div>
+          <div class="colon">:</div>
+          <div class="width"><div class="seconds">00</div></div>
+        </div>
+          
+        <div class="time back">
+          <h1 id="break-label">Break Length</h1>
+          <div class="width"><div class="minutes">05</div></div>
+          <div class="colon">:</div>
+          <div class="width"><div class="seconds">00</div></div>
+        </div>
+      </div>
+    </div>
+    <div style="cursor: pointer">
+      <div class="buttons">
+        <button class="btns start">Start</button>
+        <button class="btns pause">Pause</button>
+        <button class="btns reset">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer_portion_container">
+    <footer>
+      <div id="footer">&copy;2018 Developped for FreeCodeCamp project</div>
+    </footer>
+  </div>
+  
+  </div> 
+</div><!-- end of container -->
+
+<script type="text/javascript" src="js/countdowntimerlogic.js"></script>
+</body>
+</html>       
+
+
