@@ -357,6 +357,25 @@ body {
 	transition: 1s;
 }
 
+#demo{
+	margin-top: 2rem;
+    text-align: center;
+}
+
+#demo-button{
+	outline: none;
+	height: 2rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+}
+
+.btns, #demo-button:active{
+	box-shadow: inset 0 0 10px #000000
+}
+
 
 @media screen and (min-width: 760px) {
 	#modal-wrapper{
